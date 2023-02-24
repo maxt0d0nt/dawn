@@ -36,8 +36,12 @@
 
 }
 
+.logoDawn {
+    width: 85px;
+}
+
 .logo {
-    font-size: 30px;
+
     padding-top: 10px;
     padding-left: 25px;
   

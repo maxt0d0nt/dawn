@@ -11,9 +11,12 @@ const Hero = () => {
                 <Navbar />
                 <div className='main'>
                     DAWN, donde tu negocio tendra un nuevo amanacer
-                    <button className="btn" type='button'>EMPIEZA AHORA</button>
+                    <button data-text="Awesome" class="button">
+                        <span class="actual-text">&nbsp;CONOCENOS&nbsp;</span>
+                        <span class="hover-text" aria-hidden="true">&nbsp;CONOCENOS&nbsp;</span>
+                    </button>
                 </div>
-               
+
                 <video width="100%" id="video" autoPlay muted loop>
                     <source src={video} type="video/mp4" />
 
