@@ -16,28 +16,35 @@ video {
 
 
 .capa {
+--own-black: #1c1c1d;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #1c1c1d;
+    background: var(--own-black);
     opacity: 0.5;
     mix-blend-mode: overlay;
 }
 
 .main {
+  --own-white: #F0ebeb;
     padding-top: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 70%;
     margin: auto;
     position: relative;
     z-index: 2;
-    color: #F0ebeb;
+    color: var(--own-white);
+    font-family: Montserrat, sans-serif;
+  
+}
 
+h1{
+  margin: 15px;
 }
 /* === removing default button style ===*/
 .button {

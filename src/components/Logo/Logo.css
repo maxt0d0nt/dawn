@@ -1,0 +1,13 @@
+.title {
+    font-family: Montserrat, sans-serif;
+    font-size: 4em;
+    font-weight: 600;
+
+}
+
+@media screen and (max-width: 950px) {
+    .title{
+        font-size: 3em;
+    }
+
+  }

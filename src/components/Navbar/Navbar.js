@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars } from "react-icons/fa";
 import { RiCloseFill } from "react-icons/ri";
-import logo from "../../assets/dawn_logo-removebg-preview.png"
+import logo from "../../assets/dawnballs-removebg-preview.png"
 
 import './Navbar.css';
 
@@ -25,6 +25,7 @@ export const Navbar = () => {
       <div className={header ? 'header active' : 'Nav'}>
         <div className='logo'>
             <img src={logo} alt="logo" className='logoDawn'/>
+            <spam className="logoName">Design and Analitics Web Nexus</spam>
         </div>
         <ul className={isMobile ? 'nav-link-mobile' : 'navMenu'}>
           <div className='link'>

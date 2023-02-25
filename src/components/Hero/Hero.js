@@ -1,5 +1,6 @@
 import React from 'react';
 import video from '../../assets/amanecer-12689.mp4';
+import Logo from '../Logo/Logo';
 import { Navbar } from '../Navbar/Navbar';
 import './Hero.css'
 
@@ -10,10 +11,14 @@ const Hero = () => {
             <div className='hero-container'>
                 <Navbar />
                 <div className='main'>
-                    DAWN, donde tu negocio tendra un nuevo amanacer
-                    <button data-text="Awesome" class="button">
-                        <span class="actual-text">&nbsp;CONOCENOS&nbsp;</span>
-                        <span class="hover-text" aria-hidden="true">&nbsp;CONOCENOS&nbsp;</span>
+                    <div>
+                    <Logo/>
+                    </div>
+                    <h2>Donde tu negocio tendra un nuevo amanacer</h2>
+                    <br></br>
+                    <button data-text="Awesome" className="button">
+                        <span className="actual-text">&nbsp;CONOCENOS&nbsp;</span>
+                        <span className="hover-text" aria-hidden="true">&nbsp;CONOCENOS&nbsp;</span>
                     </button>
                 </div>
 
