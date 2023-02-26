@@ -40,6 +40,7 @@ video {
     z-index: 2;
     color: var(--own-white);
     font-family: Montserrat, sans-serif;
+    line-height: 50px;
   
 }
 

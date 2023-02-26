@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    --own-white: #F0ebeb;
+    --own-black: #13131a;
 }
 
 .navbarHero {
@@ -12,22 +13,21 @@
 }
 
 .Nav {
-    --own-white: #F0ebeb;
-    --own-black: #13131a;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 75px;
     opacity: 0.7;
-    /*border-bottom: var(--own-black) 1px solid;*/
     transition: 0.7s;
     padding: 0 20px;
 }
 
 
-.header.active {
+.headerActive {
     background-color: --own-white;
     opacity: 0.7;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,7 +35,7 @@
     border-bottom: --own-white 1px solid;
     transition: 0.7s;
     z-index: 90;
-
+color: #F0ebeb;
 }
 
 .logoName {
@@ -81,7 +81,7 @@ a {
 
 .header.active a {
     text-decoration: none;
-    color: var(--own-black)
+    color: var(--own-white)
 }
 
 .mobile-menu-icon {
