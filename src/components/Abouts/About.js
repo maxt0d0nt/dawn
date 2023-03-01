@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import bg from '../../assets/aboutbg.jpg'
+
 
 const About = () => {
     return (
