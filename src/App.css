@@ -1,3 +1,8 @@
-/* {font-family: 'Hind Madurai', sans-serif;
-font-family: 'Lora', serif;
-font-family: 'Montserrat', sans-serif;}*/
+* {
+  --font-main: "Montserrat", sans-serif;
+  --font-subTitle: "Lora", serif;
+  --font-secundary: "Hind Madurai", sans-serif;
+  --own-white: #f0ebeb;
+  --own-black: #13131a;
+  scroll-behavior: smooth;
+}

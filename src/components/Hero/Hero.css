@@ -1,50 +1,47 @@
 .hero-container {
-   
-    min-height: 100vh;
-    position: relative;
+  min-height: 100vh;
+  position: relative;
 }
 
 video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-
 .capa {
---own-black: #1c1c1d;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--own-black);
-    opacity: 0.5;
-    mix-blend-mode: overlay;
+  --own-black: #1c1c1d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--own-black);
+  opacity: 0.5;
+  mix-blend-mode: overlay;
 }
 
 .main {
-  --own-white: #F0ebeb;
-    padding-top: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    margin: auto;
-    position: relative;
-    z-index: 2;
-    color: var(--own-white);
-    font-family: Montserrat, sans-serif;
-    line-height: 50px;
-  
+  --own-white: #f0ebeb;
+  padding-top: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  color: var(--own-white);
+  font-family: Montserrat, sans-serif;
+  line-height: 40px;
+  padding-bottom: 50px;
 }
 
-h1{
+h1 {
   margin: 15px;
 }
 /* === removing default button style ===*/
@@ -59,7 +56,7 @@ h1{
 /* button styling */
 .button {
   --border-right: 6px;
-  --text-stroke-color: rgba(255,255,255,0.6);
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
   --animation-color: #d40000;
   --fs-size: 2em;
   letter-spacing: 3px;
@@ -87,5 +84,5 @@ h1{
 /* hover */
 .button:hover .hover-text {
   width: 100%;
-  filter: drop-shadow(0 0 23px var(--animation-color))
+  filter: drop-shadow(0 0 23px var(--animation-color));
 }

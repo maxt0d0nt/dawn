@@ -1,154 +1,141 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    --own-white: #F0ebeb;
-    --own-black: #13131a;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .navbarHero {
-    position: fixed;
-    width: 100%;
-    z-index: 900;
+  position: fixed;
+  width: 100%;
+  z-index: 900;
 }
 
 .Nav {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 75px;
-    opacity: 0.7;
-    transition: 0.7s;
-    padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  opacity: 0.7;
+  transition: 0.7s;
+  padding: 0 20px;
 }
 
-
 .headerActive {
-    background-color: --own-white;
-    opacity: 0.7;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 75px;
-    border-bottom: --own-white 1px solid;
-    transition: 0.7s;
-    z-index: 90;
-color: #F0ebeb;
+  background-color: var(--own-white);
+  opacity: 0.5;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  border-bottom: --own-white 1px solid;
+  transition: 0.7s;
+  z-index: 90;
 }
 
 .logoName {
-    display: flex;
-    font-family: Montserrat;
-    color: var(--own-white);
-    margin: auto;
-    font-weight: 600;
+  display: flex;
+  font-family: Montserrat;
+  color: var(--own-black);
+  margin: auto;
+  font-weight: 600;
 }
 
 .logoDawn {
-    width: 85px;
+  width: 85px;
 }
 
 .logo {
-
-    padding-top: 10px;
-    padding-left: 25px;
-
+  padding-top: 10px;
+  padding-left: 25px;
 }
 
-
 .navMenu {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    width: 75%;
-
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 75%;
 }
 
 .link {
-    font-size: 20px;
-    padding: 10px 10px;
-    margin: 0;
-    cursor: pointer;
-    color: var(--own-white);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 10px;
+  margin: 0;
+  cursor: pointer;
+  color: var(--own-black);
 }
 
 a {
-    text-decoration: none;
-    color: var(--own-white);
+  text-decoration: none;
+  color: var(--own-black);
 }
 
 .header.active a {
-    text-decoration: none;
-    color: var(--own-white)
+  text-decoration: none;
+  color: var(--own-white);
 }
 
 .mobile-menu-icon {
-    display: none;
-    padding-top: 10px;
+  display: none;
+  padding-top: 10px;
 }
 
 .link:hover {
-    border-bottom: var(--own-white) solid 2px;
-    transform: scale(1.1);
+  border-bottom: var(--own-white) solid 2px;
+  transform: scale(1.1);
 }
 
 /*------------------------ mobile ---------------------------*/
 
 @media screen and (max-width: 768px) {
-    .navMenu {
-        display: none;
+  .navMenu {
+    display: none;
+  }
 
-    }
+  .nav-link-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: rgba(122, 113, 113, 0.46);
+    left: 0;
+    top: 75px;
+    transition: all 1s ease-in-out;
+    width: 100%;
+  }
 
-    .nav-link-mobile {
-        position: absolute;
-        display: block;
-        list-style: none;
-        background-color: rgba(122, 113, 113, 0.46);
-        left: 0;
-        top: 75px;
-        transition: all 1s ease-in-out;
-        width: 100%;
+  a {
+    text-decoration: none;
+    color: var(--own-black);
+  }
 
-    }
+  .link {
+    font-weight: 700;
+    color: var(--own-white);
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    transition: all 1s ease-in-out;
+    border-bottom: var(--own-white) 1px solid;
+  }
 
-    a {
-        text-decoration: none;
-        color: var(--own-black)
-    }
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: var(--own-white);
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    top: 15px;
+    right: 25px;
+  }
 
-    .link {
-        font-weight: 700;
-        color: var(--own-white);
-        text-align: center;
-        padding: 30px;
-        width: 100%;
-        transition: all 1s ease-in-out;
-        border-bottom: var(--own-white) 1px solid;
+  .Nav {
+    opacity: 0.9;
+  }
 
-    }
-
-    .mobile-menu-icon {
-        display: block;
-        position: absolute;
-        font-size: 30px;
-        color: var(--own-white);
-        border: none;
-        outline: none;
-        background-color: rgba(255, 255, 255, 0);
-        top: 15px;
-        right: 25px;
-    }
-
-    .Nav {
-        opacity: 0.9;
-
-    }
-
-    .logoName {
-        display: none;
-    }
-
+  .logoName {
+    display: none;
+  }
 }
