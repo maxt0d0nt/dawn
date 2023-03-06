@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { RiCloseFill } from "react-icons/ri";
 import logo from "../../assets/dawnballs-removebg-preview.png";
+import { Link } from "react-router-dom";
 
 import "./Navbar.css";
 
@@ -28,11 +29,17 @@ export const Navbar = () => {
         </div>
         <ul className={isMobile ? "nav-link-mobile" : "navMenu"}>
           <div className="link">
-            <a href="#about">¿QUIEN SOMOS?</a>
+            <Link to="/about">¿QUIEN SOMOS?</Link>
           </div>
-          <div className="link">DISEÑO WEB</div>
-          <div className="link">DISEÑO UX</div>
-          <div className="link">CONTACTO</div>
+          <div className="link">
+            <Link to="/web">DISEÑO WEB</Link>
+          </div>
+          <div className="link">
+            <Link to="/ux">DISEÑO UX</Link>
+          </div>
+          <div className="link">
+            <Link to="/contact">CONTACTO</Link>
+          </div>
         </ul>
         <button className="mobile-menu-icon">
           {isMobile ? (
