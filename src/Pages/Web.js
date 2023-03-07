@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Test from '../desingComponents/Test/Test';
 
 const Web = () => {
   return (
-    <div>Web</div>
+    <>
+    <Test />
+    </>
   )
 }
 

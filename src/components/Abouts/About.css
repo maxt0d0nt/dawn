@@ -7,6 +7,11 @@
   padding: 2em;
 }
 
+.ala{
+  position: absolute;
+  margin-bottom: -80px;
+}
+
 .about-left {
   font-family: var(--font-main);
   font-size: x-large;

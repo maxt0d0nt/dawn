@@ -2,6 +2,7 @@ import React from "react";
 import "./About.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import DawnBalls from "../../desingComponents/dawnBalls/DawnBalls";
 
 const About = () => {
   AOS.init({
@@ -48,6 +49,9 @@ const About = () => {
               campañas de marketing digital para darte visualizacion y posicion
               en el mercado
             </p>
+          </div>
+          <div className="ala">
+          <DawnBalls />
           </div>
         </div>
       </div>

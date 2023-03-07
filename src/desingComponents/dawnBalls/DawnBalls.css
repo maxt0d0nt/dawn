@@ -1,0 +1,61 @@
+.dawnBalls-container{
+    display: flex;
+  
+}
+
+.ball{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+   margin: 10px;
+}
+
+.ball:hover{
+    animation-name: ball;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ball {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.5);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+    
+}
+#ball-1{
+    background-color: #d40000af;
+}
+
+#ball-2{
+    background-color: #e12c2caf;
+}
+
+#ball-3{
+    background-color: #ffa500af;
+}
+
+#ball-4{
+    background-color: #ffd700af;
+}
+
+/*------------------------  tablet ---------------------------*/
+
+@media screen and (max-width: 960px) {
+    .ball{
+        width: 50px;
+        height: 50px;
+        
+        border-radius: 50%;
+       margin: 20px 5px;
+    }
+}

@@ -2,7 +2,7 @@ import React from "react";
 import "./Logo.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import lo from "../../assets/dawnballs-removebg-preview.png";
+import DawnBalls from "../../desingComponents/dawnBalls/DawnBalls";
 
 const Logo = () => {
   AOS.init({
@@ -13,7 +13,9 @@ const Logo = () => {
   return (
     <>
       <div className="circulo">
-        <img src={lo} alt="lo" className="lo" data-aos="fade-right" />
+        <div className="circle-logo" data-aos="fade-left">
+          <DawnBalls />
+        </div>
         <div className="title">
           <p data-aos="fade-up">D A W N</p>
         </div>
