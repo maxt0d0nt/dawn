@@ -5,4 +5,8 @@
   --own-white: #f0ebeb;
   --own-black: #13131a;
   scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  
+
 }
